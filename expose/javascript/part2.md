@@ -31,3 +31,10 @@
 15. == checks if values are equal AFTER type converting them into a common type, while === simply checks if the values are equal as they are, without any type conversion.
 
 17. The result of calling this array will be [2, 4, 6]. The array is called with 2 parameters, array and callback. Then, a new empty array is created, and a for loop goes through each element in the original inputted array. For each element, the function doSomething multiplies each array element by 2, therefore 1*2 = 2, 2*2 = 4, 3*2 = 6. After this, each result is pushed to the new Array, which is returned.
+18. The output of the code will be:
+    1
+    4
+    3
+    2
+    This is because, 1 is printed immediately at console.log(1). Then, theres two setTimeout functions. console.log(4) then executes, and then immediately after, 3 is printed, as console.log(3) executes as soon as the call stack is empty. Finally, console.log(2) runs after 1000 milliseconds; 1 second.
+    
