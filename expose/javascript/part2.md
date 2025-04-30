@@ -8,8 +8,24 @@
 8. This function will return the discounted price array the same as question 4. There are no errors, all declarations are correct and the ones using let are used only in their blocks.
 9. At line 11, it will cause a ReferenceError, as i was declared using let, and accessed on line 11, outside of the loop, meaning it wasn't in the scope, resulting in this error.
 10. At line 12, the console will print the value 3, as length is declared as a const, and the length of the array is 3 (100,200,300). Therefore, the length is 3. No block scope issues as length is declared with const, but the block is the whole function.
-11. a) student.name
+11. This function will return the array [50,100,150] as usual, as all variables are used in their scope, and even though the array is declared using const, it's contents can still be modified, resulting in the correct answer.
+12. a) student.name
     b) student['Grad Year']
     c) student.greeting()
     d) student['Favorite Teacher'].name
     e) student.courseLoad[0]
+13. a) '32' - when a string and a number are added, it converts to a string and concatenates them
+    b) 1 - subtraction only works with numbers, so the string is converted to a number
+    c) 3 - null is converted to 0, so 3 + 0 = 3
+    d) '3null' - since '3' is a string, this simply concatenates both strings resulting in 3null.
+    e) 4 - true is converted to 1 when used in numeric operations, so it becomes 1 + 3 = 4
+    f) 0 - both false and null are 0 when used in numeric operations, so this is 0 + 0
+    g) '3undefined' - Once again, since 3 is a string in this case, it performs string concatenation.
+    h) NaN - undefined converts to NaN when used in numeric operations, and if any arithmetic uses NaN, the result is NaN
+14. a) true - converts 2 to a number for the comparison, and the comparison is true
+    b) false - both are strings, so it compares them alphabetically, and since 2 comes after 1, '2' is not less than '12'
+    c) true - == does type conversion, so the string is converted into a number and they are indeed equal.
+    d) false - === doesn't do type conversion, so the string isn't converted, therefore they are not the same.
+    e) false - 2 is not equal to 1 (true converts to 1)
+    f) true - any non zero number is true in boolean, so true === true is true.
+15. == checks if values are equal AFTER type converting them into a common type, while === simply checks if the values are equal as they are, without any type conversion.
