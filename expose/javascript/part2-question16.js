@@ -10,3 +10,4 @@ let statistics = {
 for (const i in statistics) {
   if (i.startsWith('r') || statistics[i] % 2 !== 0) {
     console.log('${i}: ${statistics[i]}');
+  }
